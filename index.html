@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 
+        PROJECT: Module 04 Mini Hackathon – Interactive Form with Validation
+        THEME: Job Application Form
+        DESCRIPTION: 
+        This HTML file structures a complete job application form with
+        semantic HTML, accessibility features, and class names that work 
+        with the group's shared CSS file. JavaScript will handle validation.
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <!-- Linking the external CSS file created by partner -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- =======================
+         HEADER
+         Displays the title and introduction.
+         Matches: .site-header styles
+         ======================= -->
+    <header class="site-header">
+        <h1>Job Application Form</h1>
+        <p>Please fill out the form below to apply for the selected position.</p>
+    </header>
+
+    <!-- =======================
+         MAIN FORM SECTION
+         Container for the entire form,
+         styled using .form-section
+         ======================= -->
+    <section class="form-section">
+        <h2>Applicant Information</h2>
+        <p class="form-description">
+            Provide accurate details to ensure your application is processed smoothly.
+        </p>
+
+        <!-- 
+            Feedback area for JavaScript messages
+            SUCCESS or ERROR messages will be inserted here.
+        -->
+        <div id="formFeedback" class="form-feedback"></div>
+
+        <!-- =======================
+             APPLICATION FORM
+             Uses novalidate so we can handle validation using JS.
+             ======================= -->
+        <form id="jobApplicationForm" novalidate>
+
+            <!-- =======================
+                 PERSONAL DETAILS SECTION
+                 Uses <fieldset> + <legend> for accessibility.
+                 ======================= -->
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">
+                        Full Name <span class="required">*</span>
+                    </label>
+                    <input type="text" id="fullName" required>
+                    <small class="error-message" id="nameError"></small>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">
+                        Email Address <span class="required">*</span>
+                    </label>
+                    <input type="email" id="email" required>
+                    <small class="error-message" id="emailError"></small>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone">
+                        Phone Number <span class="required">*</span>
+                    </label>
+                    <input type="tel" id="phone" placeholder="123-456-7890" required>
+                    <small class="error-message" id="phoneError"></small>
+                </div>
+            </fieldset>
+
+            <!-- =======================
+                 JOB INFORMATION SECTION
+                 Includes dropdown + checkbox skills
+                 ======================= -->
+            <fieldset>
+                <legend>Job Information</legend>
+
+                <!-- Dropdown: Position -->
+                <div class="form-group">
+                    <label for="position">
+                        Position Applying For <span class="required">*</span>
+                    </label>
+                    <select id="position" required>
+                        <option value="">-- Select a Position --</option>
+                        <option value="Frontend Developer">Frontend Developer</option>
+                        <option value="Backend Developer">Backend Developer</option>
+                        <option value="UI/UX Designer">UI/UX Designer</option>
+                        <option value="QA Tester">QA Tester</option>
+                    </select>
+                    <small class="error-message" id="positionError"></small>
+                </div>
+
+                <!-- Checkboxes: Skills -->
+                <div class="form-group">
+                    <label>Skills <span class="required">*</span></label>
+
+                    <!-- 
+                        Checkbox layout uses .checkbox-group
+                        Styled in partner's CSS
+                    -->
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                        <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                        <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+                        <label><input type="checkbox" name="skills" value="Python"> Python</label>
+                        <label><input type="checkbox" name="skills" value="React"> React</label>
+                    </div>
+
+                    <small class="error-message" id="skillsError"></small>
+                </div>
+            </fieldset>
+
+            <!-- =======================
+                 COVER LETTER SECTION
+                 Uses textarea styled by CSS.
+                 ======================= -->
+            <fieldset>
+                <legend>Cover Letter</legend>
+
+                <div class="form-group">
+                    <label for="coverLetter">
+                        Why should we hire you? <span class="required">*</span>
+                    </label>
+                    <textarea id="coverLetter" required></textarea>
+                    <small class="error-message" id="coverError"></small>
+                </div>
+            </fieldset>
+
+            <!-- =======================
+                 FORM ACTION BUTTONS
+                 Submit + Reset
+                 Styled using .form-actions
+                 ======================= -->
+            <div class="form-actions">
+                <button type="submit">Submit Application</button>
+                <button type="reset">Reset Form</button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- =======================
+         FOOTER
+         ======================= -->
+    <footer class="site-footer">
+        © 2025 Job Application Portal — All Rights Reserved
+    </footer>
+
+    <!-- JavaScript validation file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
