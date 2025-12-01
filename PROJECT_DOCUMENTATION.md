@@ -24,7 +24,18 @@ The form collects user details, preferences, and agreement confirmation, and inc
 
 ### Kamaldeep Kaur:
 
-- *(To be completed by Kamaldeep)*  
+- Created the complete index.html file, including the structure of all form sections, fieldsets, legends, and user input fields.
+
+- Added detailed documentation comments throughout the HTML file to explain functionality, accessibility roles, and how each part interacts with CSS and JavaScript validation.
+
+- Ensured proper use of semantic HTML5 elements and correct label associations for accessibility and screen-reader compatibility.
+
+
+- Added IDs, error message placeholders, and validation hooks required for JavaScript-based form validation.
+
+- Reviewed the GitHub repository, resolved cloning and syncing issues, and helped ensure that all members’ work was properly added and visible in the project.
+
+- Communicated CSS duplication issues and assisted the group in keeping the codebase clean, organized, and consistent.
 -  
 
 ### Jaskarandeep Kaur:
