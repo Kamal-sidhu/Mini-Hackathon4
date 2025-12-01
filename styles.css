@@ -1,0 +1,358 @@
+/* Global Base Styles */
+:root {
+    --border-radius: 6px;
+    --spacing: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f4f5fb;
+}
+
+/* Header */
+.site-header {
+    background: #1f4f7b;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0 0 0.5rem;
+}
+
+/* Form Wrapper */
+.form-section {
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.form-section h2 {
+    margin-top: 0;
+}
+
+.form-description {
+    margin-top: 0;
+    color: #555;
+}
+
+/* Fieldsets & Groups */
+form {
+    margin-top: 1rem;
+}
+
+fieldset {
+    border: 1px solid #d0d4e4;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #c0c4d4;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Small Text & Required Mark */
+.help-text {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.required {
+    color: #c0392b;
+}
+
+/* Checkbox Layout */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+
+.checkbox-group label {
+    font-weight: 400;
+}
+
+/* Error States */
+.error-message {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    color: #c0392b;
+}
+
+input.error,
+select.error,
+textarea.error {
+    border-color: #c0392b;
+    background-color: #ffecec;
+}
+
+/* Form Feedback Banner */
+.form-feedback {
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-feedback.success {
+    color: #1b7a34;
+}
+
+.form-feedback.error {
+    color: #c0392b;
+}
+
+/* Buttons */
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+button {
+    padding: 0.6rem 1.3rem;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+button[type="submit"] {
+    background-color: #1f4f7b;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #164063;
+}
+
+button[type="reset"] {
+    background-color: #e0e3ef;
+    color: #333;
+}
+
+button[type="reset"]:hover {
+    background-color: #ccd0e2;
+}
+
+/* Accessibility Focus Styles */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #1f4f7b;
+    outline-offset: 1px;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+/* Global Base Styles */
+:root {
+    --border-radius: 6px;
+    --spacing: 1rem;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f4f5fb;
+}
+/* Header */
+.site-header {
+    background: #1f4f7b;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+}
+.site-header h1 {
+    margin: 0 0 0.5rem;
+}
+/* Form Wrapper */
+.form-section {
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+.form-section h2 {
+    margin-top: 0;
+}
+.form-description {
+    margin-top: 0;
+    color: #555;
+}
+/* Fieldsets & Groups */
+form {
+    margin-top: 1rem;
+}
+fieldset {
+    border: 1px solid #d0d4e4;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+legend {
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #c0c4d4;
+    font: inherit;
+}
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+/* Small Text & Required Mark */
+.help-text {
+    font-size: 0.85rem;
+    color: #666;
+}
+.required {
+    color: #c0392b;
+}
+/* Checkbox Layout */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+.checkbox-group label {
+    font-weight: 400;
+}
+/* Error States */
+.error-message {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    color: #c0392b;
+}
+input.error,
+select.error,
+textarea.error {
+    border-color: #c0392b;
+    background-color: #ffecec;
+}
+/* Form Feedback Banner */
+.form-feedback {
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.form-feedback.success {
+    color: #1b7a34;
+}
+.form-feedback.error {
+    color: #c0392b;
+}
+/* Buttons */
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+button {
+    padding: 0.6rem 1.3rem;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+button[type="submit"] {
+    background-color: #1f4f7b;
+    color: #ffffff;
+}
+button[type="submit"]:hover {
+    background-color: #164063;
+}
+button[type="reset"] {
+    background-color: #e0e3ef;
+    color: #333;
+}
+button[type="reset"]:hover {
+    background-color: #ccd0e2;
+}
