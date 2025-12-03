@@ -40,5 +40,19 @@ The form collects user details, preferences, and agreement confirmation, and inc
 
 ### Jaskarandeep Kaur:
 
-- *(To be completed by Jaskarandeep)*  
--  
+-  Developed the complete script.js file for client-side form validation.
+
+Implemented real-time validation for all form fields, including text inputs, email, phone number, dropdown selection, checkboxes, and textarea.
+
+Added custom validation rules for full name, email format, phone format, skills selection, and minimum cover letter length.
+
+Created inline error messages for each field and a global success/error feedback message for accessibility.
+
+Ensured accessible error handling, using aria-live, focus management, and keyboard-friendly interactions.
+
+Implemented form reset behavior to clear errors and feedback messages correctly.
+
+Added helper functions to streamline error handling and improve maintainability.
+
+Commented the script extensively to provide documentation for future developers and facilitate team understanding.
+
